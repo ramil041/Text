@@ -1,0 +1,47 @@
+<!<!DOCTYPE html>
+<html lang="az" >
+<head>
+    
+    <meta charset="utf-8" />
+
+    <title>Matrix Kursları</title>
+
+<link rel="favicon icon"  href="./assets/images/favicon.ico?v=1.0.0" sizes="16x16" />
+
+<script src="assets/js/store.js"></script>
+
+</head>
+<body>
+<div class="container">
+    
+
+</div>
+<script>
+    
+let newmenu = menu.map(item=>{
+return{
+    id:item.id,
+    title:item.title,
+    price:item.price,
+    images:item.images,
+
+}
+}) ;
+
+
+console.log(newmenu);
+
+let div='';
+let new_list=document.getElementsByClassName('container')[0];
+for(let item of newmenu){
+    div+=`<div> ${item.images} ${item.title} ${item.price} ${item.id}</div>`
+}
+
+
+new_list.innerHTML=div
+
+</script>
+
+
+</body>
+</html>

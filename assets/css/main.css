@@ -1,0 +1,10 @@
+@import url('reset.css');
+
+.no_transition,
+.no_transition *{
+	transition: unset !important;
+}
+
+/**/
+
+  
